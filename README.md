@@ -1,5 +1,5 @@
 # movie_rank
-Retrofit2을 활용하여 영화진흥원 api을 사용한 영화순위 앱
+네아로 SDK와 Retrofit2을 활용하여 영화진흥원 api을 사용한 영화순위 앱
 
 + 실제 앱 화면
 
