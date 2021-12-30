@@ -32,42 +32,149 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_main_text" />
 
+    <!-- 어제의 순위 -->
     <ImageButton
         android:id="@+id/ib_yesterday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:src="@drawable/button_3"
-        android:text="박스오피스 : 어제의 순위"
-        android:textStyle="bold"
+        android:src="@drawable/bg_1"
         app:layout_constraintBottom_toTopOf="@+id/ib_two_week"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/ib_two_week"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/button_1"
-        android:text="박스오피스 : 어제의 순위"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="어제의 순위"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ib_yesterday"
+        app:layout_constraintTop_toTopOf="@+id/ib_yesterday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="56dp"
+        android:text="Yesterday"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ib_yesterday"
+        app:layout_constraintTop_toTopOf="@+id/ib_yesterday" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_yesterday"
+        app:layout_constraintEnd_toEndOf="@+id/ib_yesterday"
+        app:layout_constraintTop_toTopOf="@+id/ib_yesterday" />
+
+    <!-- 2주전 순위 -->
+    <ImageButton
+        android:id="@+id/ib_two_week"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_2"
         app:layout_constraintBottom_toTopOf="@+id/ib_month"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/ib_month"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="2주 전 순위"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ib_two_week"
+        app:layout_constraintTop_toTopOf="@+id/ib_two_week" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="56dp"
+        android:text="Two weeks"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ib_two_week"
+        app:layout_constraintTop_toTopOf="@+id/ib_two_week" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_two_week"
+        app:layout_constraintEnd_toEndOf="@+id/ib_two_week"
+        app:layout_constraintTop_toTopOf="@+id/ib_two_week" />
+
+    <!-- 한달전 순위 -->
+    <ImageButton
+        android:id="@+id/ib_month"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
         android:layout_marginBottom="70dp"
-        android:background="@drawable/button_2"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_3"
         android:text="박스오피스 : 한달 전 순위"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="한달 전 순위"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ib_month"
+        app:layout_constraintTop_toTopOf="@+id/ib_month" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="56dp"
+        android:text="A month"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ib_month"
+        app:layout_constraintTop_toTopOf="@+id/ib_month" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_month"
+        app:layout_constraintEnd_toEndOf="@+id/ib_month"
+        app:layout_constraintTop_toTopOf="@+id/ib_month" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
